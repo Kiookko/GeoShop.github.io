@@ -5,7 +5,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url('background.jpg'); /* Замените на путь к вашему изображению */
+    background-image: url('https://png.pngtree.com/background/20210714/original/pngtree-abstract-technology-bacground-picture-image_1243047.jpg'); /* Замените на путь к вашему изображению */
     background-size: cover;
     background-position: center;
 }

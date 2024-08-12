@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Marketplace</title>
+    <title>Custom 3D Shop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <!-- 3D Background Canvas -->
+    <div id="bg-container">
+        <canvas id="bg-canvas"></canvas>
+    </div>
+
     <!-- Navigation Menu -->
     <div class="nav">
         <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-        <h1>Online Marketplace</h1>
+        <h1>Custom 3D Shop</h1>
     </div>
 
     <!-- Sidebar Menu -->
@@ -20,7 +25,7 @@
         <a href="#">Home</a>
         <a href="#">My Profile</a>
         <a href="#">My Products</a>
-        <a href="#">Add Product</a>
+        <a href="#" onclick="openModal()">Add Product</a>
         <a href="#">Messages</a>
         <a href="#">Settings</a>
         <a href="#">Logout</a>
@@ -63,6 +68,7 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>

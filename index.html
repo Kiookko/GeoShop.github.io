@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom 3D Shop</title>
+    <title>GeoShop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,19 +16,19 @@
     <!-- Navigation Menu -->
     <div class="nav">
         <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-        <h1>Custom 3D Shop</h1>
+        <h1>GeoShop</h1>
     </div>
 
     <!-- Sidebar Menu -->
     <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">My Profile</a>
-        <a href="#">My Products</a>
+        <a href="#">Главная страница</a>
+        <a href="#">Мой профиль</a>
+        <a href="#">Мои товары</a>
         <a href="#" onclick="openModal()">Add Product</a>
-        <a href="#">Messages</a>
-        <a href="#">Settings</a>
-        <a href="#">Logout</a>
+        <a href="#">Сообщение</a>
+        <a href="#">Настройки</a>
+        <a href="#">Выйти</a>
     </div>
 
     <!-- Main Content -->
@@ -37,9 +37,9 @@
             <!-- Products List -->
             <div class="product">
                 <img src="placeholder.png" alt="Product Image">
-                <h2>Product Title</h2>
-                <p>Description of the product...</p>
-                <span>$100</span>
+                <h2>Обучение</h2>
+                <p>Скоро выйдет...</p>
+                <span>???$</span>
             </div>
             <!-- Repeat similar blocks for more products -->
         </div>
@@ -49,7 +49,7 @@
     <div id="addProductForm" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Add New Product</h2>
+            <h2>Добавить новый товар</h2>
             <form id="productForm">
                 <label for="productName">Product Name</label>
                 <input type="text" id="productName" name="productName" required>

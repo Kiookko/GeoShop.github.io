@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <div class="nav">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <h1>Online Marketplace</h1>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">My Profile</a>
+        <a href="#">My Products</a>
+        <a href="#">Add Product</a>
+        <a href="#">Messages</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="products">
+            <!-- Products List -->
+            <div class="product">
+                <img src="placeholder.png" alt="Product Image">
+                <h2>Product Title</h2>
+                <p>Description of the product...</p>
+                <span>$100</span>
+            </div>
+            <!-- Repeat similar blocks for more products -->
+        </div>
+    </div>
+
+    <!-- Add Product Form -->
+    <div id="addProductForm" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Add New Product</h2>
+            <form id="productForm">
+                <label for="productName">Product Name</label>
+                <input type="text" id="productName" name="productName" required>
+                
+                <label for="productDescription">Description</label>
+                <textarea id="productDescription" name="productDescription" required></textarea>
+                
+                <label for="productPrice">Price</label>
+                <input type="number" id="productPrice" name="productPrice" required>
+                
+                <label for="productImage">Image</label>
+                <input type="file" id="productImage" name="productImage" accept="image/*">
+                
+                <button type="submit">Add Product</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
